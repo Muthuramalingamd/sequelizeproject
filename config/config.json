@@ -1,15 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "seqlcli",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "admin",
+    "password": "password",
+    "database": "sequelizetest",
+    "host": "database-1.cwhve6udbqdy.us-east-1.rds.amazonaws.com",
+    "dialect":"mysql",
+    "port":"3306",
+    "pool": {
+      "max": 15,
+      "min": 5,
+      "idle": 20000,
+      "evict": 15000,
+      "acquire": 30000
+    }
   },
-  "test": {
+  "uat": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "database_uat",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
